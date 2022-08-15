@@ -10,6 +10,8 @@ jobs:
       - uses: actions/setup-node@v3
       - run: |
           node -v
+          echo ${{secrets.MYSECRET}}
+          
   job2:
     runs-on: ubuntu-latest
     container:
